@@ -3,9 +3,6 @@ title: gtk coop
 url: http://gtkcoop.siteleaf.net
 timezone: UTC
 collections:
-  titles:
-    title: Titles
-    output: true
   uploads:
     title: Uploads
     output: true
