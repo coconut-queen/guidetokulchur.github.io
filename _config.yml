@@ -13,6 +13,58 @@ paypal:
   email: clevelandtapes@yahoo.com
 defaultphoto: "https://placeholdit.imgix.net/~text?txtsize=42&txt=Image+Coming+Soon&w=600&h=400"
 defaultcover: "main-cover.jpg"
+
+
+
+collections:
+  titles:
+    output: true
+    scope:
+      path: "titles"              # an empty string here means all files
+      type: "title" # applies defaults only to documents in this collection
+    values:
+      layout: title
+      title: Title Of The Work
+      permalink: "the-url-path-to-the-title"
+      cover: filepath.jpg
+      description: "A description of the work, with an author bio at the end"
+      author: Author Name
+      price: "12.00"
+      releasedate: "2015-11-22"
+      instock: true
+      numinstock: ""
+      collection: "permalink-of-the-collection-it-belongs-to"
+      isbn: ""
+      numpages: ""
+      dimensions: 4.5x6
+      published: true
+  collections:
+    output: true
+    scope:
+      path: "titles"              # an empty string here means all files
+      type: "title" # applies defaults only to documents in this collection
+    values:
+      title: "Vanguard Series"
+      permalink: vanguard-series
+      collectiontype: series
+      published: true
+      layout: collection
+      cover: vanguard-series.jpg
+      submissionemail: submissions@guidetokulchurcleveland.com
+      submissioninfo: |
+          Submit ALL your vanguardisms
+      description: |
+          Giving voice to emerging writers
+  static:
+    output: true
+    scope:
+      path: "static"
+      tyoe: "static"
+    values:
+      layout: static
+      published: true
+      title: GTK Creative Journal Submission Guidelines
+      permalink: "gtk-creative-journal-submission-guidelines"
 prose:
   rooturl: '_posts'
   siteurl: 'https://guidetokulchur.com/'
