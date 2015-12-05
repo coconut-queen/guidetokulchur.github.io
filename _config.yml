@@ -1,12 +1,11 @@
 ---
-title: Guide to Kulchur Press
-url: http://guidetokulchur.siteleaf.net
-timezone: America/New_York
+title: gtk coop
+url: http://gtkcoop.siteleaf.net
+timezone: UTC
 collections:
+  titles:
+    title: Titles
+    output: true
   uploads:
     title: Uploads
     output: true
-Paper Stocks:
-- type: 35LB Vellum
-  mutliplier: ".023"
-  multiplier: ".026"
