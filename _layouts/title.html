@@ -64,7 +64,7 @@ section: titles
                 <!-- show a link to the rest of the collection -->
                 {% for collection in site.serieses %}
                   {% if collection.permalink == page.series %}
-                  <p class="lead"><a href="{{site.baseurl}}{{collection.url}}"><em>{{collection.title}}</em></a></p>
+                  <p class="lead"><a href="{{collection.url}}"><em>{{collection.title}}</em></a></p>
                   {% endif %}
                 {% endfor %}
             </div>

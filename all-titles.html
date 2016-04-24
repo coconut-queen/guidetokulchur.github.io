@@ -10,7 +10,7 @@ section: all
 <div class="list-group isotope-list">
     {% for item in site.titles limit:400 order:date %}
       {% if item.releasedate <= curr_date %}
-      <a href="{{site.baseurl}}{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
+      <a href="{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
         <div>
         {% if item.cover %}
         <img style="width:100%" src="{{site.mediapath}}/{{item.cover}}">
@@ -36,7 +36,7 @@ section: all
 <div class="list-group">
     {% for item in site.titles limit:400 order:title %}
     {% if item.releasedate >= curr_date %}
-      <a href="{{site.baseurl}}{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
+      <a href="{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
         <div>
           {% if item.cover %}
           <img style="width:100%" src="{{site.mediapath}}/{{item.cover}}">

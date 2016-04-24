@@ -55,7 +55,7 @@ layout: default
              <div class="list-group">
                 {% for item in titles %}
                   {% if item.releasedate <= curr_date %}
-                  <a href="{{site.baseurl}}{{item.url}}" class="list-group-item">
+                  <a href="{{item.url}}" class="list-group-item">
                   <div class="row">
                       <div class="col-md-4">
                       {% if item.cover %}
@@ -79,7 +79,7 @@ layout: default
                 <div class="list-group">
                     {% for item in titles %}
                       {% if item.releasedate >= curr_date %}
-                      <a href="{{site.baseurl}}{{item.url}}" class="list-group-item">
+                      <a href="{{item.url}}" class="list-group-item">
                       <div class="row">
                           <div class="col-md-4">
                           {% if item.cover %}
