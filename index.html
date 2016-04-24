@@ -5,7 +5,7 @@ title: 'Literature and Theory from the Margins'
 ---
 {% assign curr_date = site.time | date: "%Y-%m-%d" %}
 <div class="row-fluid">
-<div class="banner-image"  style="background-image: url({{site.baseurl}}/{{site.mediapath}}/{{site.defaultcover}})">
+<div class="banner-image"  style="background-image: url({{site.mediapath}}/{{site.defaultcover}})">
 
 </div>
 </div>
@@ -19,7 +19,7 @@ title: 'Literature and Theory from the Margins'
 
           <ul class="list-group">
           {% for item in site.serieses limit:400 %}
-            <a href="{{site.baseurl}}{{item.url}}" class="list-group-item">
+            <a href="{{item.url}}" class="list-group-item">
                   <h4 class="list-group-heading"> {{item.title}} <span class="fa fa-arrow-right pull-right"></span></h4>
                   <p class="list-group-item-text">{{item.description}}</p>
               </a>
@@ -32,11 +32,11 @@ title: 'Literature and Theory from the Margins'
           <div class="list-group">
                 {% for item in site.titles limit:12 | sort: 'releasedate', 'last' %}
                 {% if item.releasedate <= curr_date %}
-                <a href="{{site.baseurl}}{{item.url}}" class="list-group-item">
+                <a href="{{item.url}}" class="list-group-item">
                 <div class="row">
                     <div class="col-md-4">
                       {% if item.cover%}
-                      <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
+                      <img style="width:100%" src="{{site.mediapath}}/{{item.cover}}">
                       {% else %}
                       <img src="{{site.defaultphoto}}" style="width:100%" />
                       {% endif %}
@@ -54,11 +54,11 @@ title: 'Literature and Theory from the Margins'
             <div class="list-group">
                 {% for item in site.titles limit:12 | sort: 'releasedate', 'last' %}
                 {% if item.releasedate >= curr_date %}
-                <a href="{{site.baseurl}}{{item.url}}" class="list-group-item">
+                <a href="{{item.url}}" class="list-group-item">
                 <div class="row">
                     <div class="col-md-4">
                       {% if item.cover%}
-                      <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
+                      <img style="width:100%" src="/{{site.mediapath}}/{{item.cover}}">
                       {% else %}
                       <img src="{{site.defaultphoto}}" style="width:100%" />
                       {% endif %}
