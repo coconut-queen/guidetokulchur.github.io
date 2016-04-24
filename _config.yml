@@ -3,6 +3,7 @@ permalink: pretty
 markdown: rdiscount
 port: 3200
 host: 127.0.0.1
+mediapath: "media"
 about: >
   Working in the tradition of independent presses since its inception, gtk press
   publishes works of theory, fiction, poetry, madness, economics, satire, sexuality,
@@ -13,9 +14,6 @@ paypal:
   email: clevelandtapes@yahoo.com
 defaultphoto: "https://placeholdit.imgix.net/~text?txtsize=42&txt=Image+Coming+Soon&w=600&h=400"
 defaultcover: "main-cover.jpg"
-
-
-
 collections:
   titles:
     output: true
@@ -38,7 +36,7 @@ collections:
       numpages: ""
       dimensions: 4.5x6
       published: true
-  collections:
+  serieses:
     output: true
     scope:
       path: "titles"              # an empty string here means all files
@@ -46,7 +44,22 @@ collections:
     values:
       title: "Vanguard Series"
       permalink: vanguard-series
-      collectiontype: series
+      published: true
+      layout: collection
+      cover: vanguard-series.jpg
+      submissionemail: submissions@guidetokulchurcleveland.com
+      submissioninfo: |
+          Submit ALL your vanguardisms
+      description: |
+          Giving voice to emerging writers
+  journal:
+    output: true
+    scope:
+      path: "titles"              # an empty string here means all files
+      type: "title" # applies defaults only to documents in this collection
+    values:
+      title: "Vanguard Series"
+      permalink: vanguard-series
       published: true
       layout: collection
       cover: vanguard-series.jpg
@@ -59,180 +72,9 @@ collections:
     output: true
     scope:
       path: "static"
-      tyoe: "static"
+      type: "static"
     values:
       layout: static
       published: true
       title: GTK Creative Journal Submission Guidelines
       permalink: "gtk-creative-journal-submission-guidelines"
-prose:
-  rooturl: '_posts'
-  siteurl: 'https://guidetokulchur.com/'
-  relativeLinks: 'https://guidetochulchur.com/links.jsonp'
-  media: 'media'
-  metadata:
-    _posts:
-      - name: "title"
-        field:
-          element: "hidden"
-          value: "title"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-    _posts/title:
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-      - name: "cover"
-        field:
-          element: "text"
-          label: "Cover Image path"
-          placeholder: "blah.jpg"
-          help: "Upload an image using the WYSIWYG, and use the provided filename similar to the placeholder"
-      - name: "description"
-        field:
-          element: "textarea"
-          label: "Short Description"
-          placeholder: "A description that shows up on the collection page and elsewhere"
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author Name"
-          placeholder: "James Baldwin"
-          help: "If there is no author, leave blank and the 'by' text won't appear anywhere. Set the author bio in the body text"
-      # - name: "authorbio"
-      #   field:
-      #     element: "textarea"
-      #     label: "Author Bio"
-      #     placeholder: "Stuff"
-      - name: "price"
-        field:
-          element: "text"
-          label: "Price"
-          placeholder: "30.00"
-          help: "Be sure to leave out the $ sign!"
-      - name: "releasedate"
-        field:
-          element: "text"
-          label: "Release Date"
-          placeholder: 1999-02-01
-          help: "Use the format year-mo-da, such as 1999-02-04"
-      - name: "instock"
-        field:
-          element: checkbox
-          label: "In Stock?"
-          help: "Regardless of the stock level, whether or not these titles can be sold"
-          value: true
-      - name: "numinstock"
-        field:
-          element: "text"
-          label: "Number In Stock"
-          help: "Number of these titles printed in stock"
-      - name: "collection"
-        field:
-          element: "select"
-          label: "Collection - Series or Journal"
-          options:
-            - name: "Dialogues Series"
-              value: "dialogues-series"
-            - name: "Dialogues Annual"
-              value: "dialogues-annual"
-            - name: "GTK Creative Journal"
-              value: "gtk-creative-journal"
-            - name: "Vanguard Series"
-              value: "vanguard-series"
-            - name: "Collaborations Series"
-              value: "collaborations-series"
-      - name: "isbn"
-        field:
-          element: "text"
-          label: "ISBN Number"
-          help: "Library of congress ISBN number"
-      - name: "numpages"
-        field:
-          element: "text"
-          label: "# of pages"
-      - name: "dimensions"
-        field:
-          element: "text"
-          label: "Book dimensions"
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "title"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "title"
-    _posts/collection:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "collection"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "collection"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
-      - name: "submissionslink"
-        field:
-          element: "text"
-          label: "Submissions Path"
-          value: ""
-          help: "This is the same as the 'permalink' field for the static page which has the submission guidlines"
-      - name: "cover"
-        field:
-          element: "text"
-          label: "Cover Image path"
-          placeholder: "blah.jpg"
-          help: "Upload an image using the WYSIWYG, or refer to an image in media/ folder. media/ prefix is assumed. Make sure it is optimized fo a full bleed, similar to a facebook cover photo (the crop will always be centered though)"
-      - name: "description"
-        field:
-          element: "textarea"
-          label: "Short Description"
-          placeholder: "A description that shows up on the front page and elsewhere"
-          value: ""
-      - name: "collectiontype"
-        field:
-          label: "Collection Type"
-          element: 'select'
-          options:
-            - name: 'Journal'
-              value: 'journal'
-            - name: 'Series'
-              value: 'series'
-    _posts/static:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "static"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "static"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""

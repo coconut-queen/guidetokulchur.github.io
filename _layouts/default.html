@@ -9,7 +9,7 @@
   <!-- Regardless of what category it is -->
     <meta property='og:title' content='{{page.title}}'/>
     <meta property="og:description" content="{{page.description}}"/>
-    <meta property="og:image" content="{{site.baseurl}}/{{site.prose.media}}/{{page.cover}}"/>
+    <meta property="og:image" content="{{site.baseurl}}/{{site.mediapath}}/{{page.cover}}"/>
 
     {% if page.category == 'title' %}
     <meta property="og:type" content="books.book"/>
@@ -23,7 +23,7 @@
 
   {% endif %}
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.3.4/yeti/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   <link rel="stylesheet" id="font-oswald-css" href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" media="all">
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
@@ -32,15 +32,14 @@
   {% include nav.html %}
   {{content}}
   {% include footer.html %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
 
   <script src='{{site.baseurl}}/site.js'></script>
-  {% if page.section == 'all' %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
-    <script src="{{site.basurl}}/titles.js"></script>
-  {% endif %}
+  <script src="{{site.basurl}}/titles.js"></script>
+  
   <script>
     paypal.minicart.render();
     var cartItems = paypal.minicart.cart.items();

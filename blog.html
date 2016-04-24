@@ -1,0 +1,39 @@
+---
+layout: default
+section: blog
+---
+{% assign curr_date = site.time | date: '%Y-%m-%d' %}
+<div class="banner-image" style="background-image:url('https://scontent-atl3-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/1382320_411822695675462_2200320298522083991_n.jpg?oh=59b182bfa25969db2a723e1b96950371&oe=5788F7CE')">
+</div>
+<div class="banner-overlay-wrapper">
+  <div class="banner-image-overlay">
+
+  </div>
+  <div class="banner-title">
+      <h2>Blog</h2>
+      <div>
+          <p>{{page.description}}</p>
+      </div>
+  </div>
+</div>
+<div class="container">
+<div class="list-group isotope-list">
+{% for item in site.posts limit:12 sort:start_date, last %}
+      <a href="https://facebook.com/events/{{item.id}}" target="_blank" class="list-group-item col-lg-4 col-sm-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title">{{item.title}}</h4>
+        </div>
+        <img
+          class="img-responsive img-rounded"
+          style="top: {{item.cover.offset_y}}%; bottom: {{item.cover.offset_y}}%; left: {{item.cover.offset_x}}%; right:{{item.cover.offset_x}}%;"
+          src={{item.cover.source}} alt={{item.name}}
+        />
+        <div class="panel-body">
+          {{{item.content | truncatewords: 42}}}
+        </div>
+      </div>
+    </a>
+{% endfor %}
+</div>
+</div>

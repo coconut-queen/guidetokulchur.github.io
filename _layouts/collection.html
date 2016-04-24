@@ -6,7 +6,7 @@ layout: default
 {% if page.collectiontype == "journal" %}
 {% assign item_label = "Issues" %}
 {% endif %}
-{% assign titles = site.categories.title limit:400 | where:'collection', page.permalink | sort: 'releasedate' %}
+{% assign titles = site.titles limit:400 | where:'collection', page.permalink | sort: 'date', 'last' %}
 {% assign current_titles = false %}
 {% assign upcoming_titles = false %}
 {% for item in titles %}
@@ -16,7 +16,7 @@ layout: default
       {% assign upcoming_titles = true %}
   {% endif %}
 {% endfor %}
-<div class="banner-image" style="background-image:url('{{site.baseurl}}/{{site.prose.media}}/{{page.cover}}')">
+<div class="banner-image" style="background-image:url('{{site.baseurl}}/{{site.mediapath}}/{{page.cover}}')">
 </div>
 <div class="banner-overlay-wrapper">
   <div class="banner-image-overlay">
@@ -59,7 +59,7 @@ layout: default
                   <div class="row">
                       <div class="col-md-4">
                       {% if item.cover %}
-                      <img style="width:100%" src="{{site.baseurl}}/{{site.prose.media}}/{{item.cover}}">
+                      <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
                       {% else %}
                       <img src="{{site.defaultphoto}}"style="width:100%;" />
                       {% endif %}
@@ -83,7 +83,7 @@ layout: default
                       <div class="row">
                           <div class="col-md-4">
                           {% if item.cover %}
-                          <img style="width:100%" src="{{site.baseurl}}/{{site.prose.media}}/{{item.cover}}">
+                          <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
                           {% else %}
                           <img src="{{site.defaultphoto}}"style="width:100%;" />
                           {% endif %}

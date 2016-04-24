@@ -1,0 +1,19 @@
+- title: Solutions
+  url: /solutions
+  subpages:
+    - title: Solution 1
+      url: /solutions/1
+    - title: Solution 2
+      url: /solutions/2
+    - title: Solution 3
+      url: /solutions/3
+
+- title: Products
+  url: /products
+  subpages:
+    - title: Product A
+      url: /products/a
+    - title: Product B
+      url: /products/b
+    - title: Product C
+      url: /products/c

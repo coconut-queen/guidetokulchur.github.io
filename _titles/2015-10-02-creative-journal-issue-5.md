@@ -1,8 +1,9 @@
 ---
 layout: title
+category: title
 permalink: "gtk-creative-issue-5"
 cover: GTK 5 Cover.jpg
-description: "Now Available!"
+description: null
 author: ""
 price: "12.00"
 releasedate: "2015-10-21"
@@ -14,8 +15,9 @@ numpages: ""
 dimensions: ""
 published: true
 title: "Creative Journal Issue #5"
-category: title
 ---
+
+
 
 
 ## from Tatiana Ryckman's 

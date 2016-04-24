@@ -1,6 +1,5 @@
 ---
 layout: title
-category: title
 title: Fracture
 author: Zena Smith
 permalink: "fracture-zena-smith"

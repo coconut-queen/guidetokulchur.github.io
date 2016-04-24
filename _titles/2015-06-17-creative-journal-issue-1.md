@@ -4,7 +4,7 @@ category: title
 published: true
 title: "Creative Journal Issue #1"
 collection: "gtk-creative-journal"
-description: "35 contributors from Montreal, Quebec to Tokyo, Japan"
+description: null
 authorbio: null
 price: "12.00"
 permalink: "creative-journal-1"
@@ -17,6 +17,7 @@ isbn: ""
 numpages: ""
 dimensions: ""
 ---
+
 
 
 ##from Vita Brown's

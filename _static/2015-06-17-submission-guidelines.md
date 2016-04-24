@@ -9,19 +9,21 @@ permalink: "gtk-creative-journal-submission-guidelines"
 
 
 
-
-
-## SUBMISSIONS ARE CURRENTLY CLOSED
+## SUBMISSIONS ARE NOW OPEN
 
 ### Reading Period
 
-* JAN.1 - FEB.15 (Issue 7)
+* April 1 - May 15 (Issue 8)
 
 ### Guidelines:
 
-Up to ten pages (no pdf files) of poetry, short fiction and personal essay. Work previously published will not be considered.
+Up to ten pages poetry, short fiction, photo and personal essay. Please insert a page break between each piece if you are submitting more than one piece. No pdf files.
 
-Simultaneous submissions are accepted so long as you inform us immediately that your work has been accepted elsewhere.
+We are also taking submissions for cover art.
+
+Please send art and photo submissions at 300 DPI, 8.5 inches high and 5.5 inches wide.
+
+Simultaneous submissions are strongly discouraged. Work previously published will not be considered.
 
 Please include a short bio,third-person, 50 words max.
 

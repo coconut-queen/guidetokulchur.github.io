@@ -20,18 +20,23 @@
                 </fieldset>
             </form>
       <ul class="nav navbar-nav navbar-right">
-        {% if page.section == 'all' %}
-          <li class="active"><a href="{{site.baseurl}}/all-titles">All Titles <span class="sr-only">(current)</span></a></li>
-        {% else %}
-          <li><a href="{{site.baseurl}}/all-titles">All Titles</a></li>
-        {% endif %}
-        {% for item in site.categories.collection limit:400 %}
-        {% if item.url == page.url %}
-          <li class="active"><a href="{{site.baseurl}}{{item.url}}">{{item.title}} <span class="sr-only">(current)</span></a></li>
-        {% else %}
-          <li><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></li>
-        {% endif %}
-        {% endfor %}
+        <li><a href="{{site.baseurl}}/events">Events</a></li>
+        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Press <span class="caret"></span>
+          </a>
+          {% if site.serieses %}
+          <ul class="dropdown-menu " >
+              <li><a href="{{site.baseurl}}/all-titles">All Titles</a></li>
+              {% for item in site.serieses %}
+              <li {% if item.url == page.url %} class="active"{% endif %}>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+              </li>
+              {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
       </ul>
 
     </div>

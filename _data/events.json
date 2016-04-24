@@ -1,0 +1,34 @@
+[
+  {
+    "id": "561363684041108",
+    "name": "Cindy Milstein - Taking Sides Anthology Book Tour",
+    "start_time": "2016-04-21T19:00:00-0400",
+    "end_time": "2016-04-21T21:00:00-0400",
+    "place": {
+      "name": "Guide To Kulchur: Text, Art, and News",
+      "location": {
+        "city": "Cleveland",
+        "country": "United States",
+        "latitude": 41.484951,
+        "longitude": -81.7274475,
+        "state": "OH",
+        "street": "5900 Detroit Ave",
+        "zip": "44102"
+      },
+      "id": "140172189507182"
+    },
+    "picture": {
+      "data": {
+        "is_silhouette": false,
+        "url": "https://scontent.xx.fbcdn.net/hphotos-xlp1/v/t1.0-0/p50x50/12718029_480326362158428_1210777051005508752_n.jpg?oh=e4a3742313bcea402b52e3b617c97bc7&oe=57B7A881"
+      }
+    },
+    "description": "Thursday,  April 21 at 7pm \n\nGTK, in collaboration with Burning River Distro are excited to be hosting Cindy Milstein as she leads a discussion around the questions raised in the new anthology \"Taking Sides: Revolutionary Solidarity and the Poverty of Liberalism\"\n(edited by Cindy Milstein and published by AK Press).\n\nThe event is FREE and open to the public. Copies of \"Taking Sides\" will be available for sale on a sliding-scale basis. \n\nWe will also be passing the hat in support of The Cleveland Four\n(for more info)\nhttp://www.cleveland4solidarity.org/\n\nAbout Taking Sides:\nSuch collective reflection is essential not only in helping to sustain the spirit of rebellion but also aiding it to claim some victories in the task of dismantling systemic violence, such as states, capitalism, and settler colonialism, or murderous policing, white supremacy, heteropatriarchy, and so much more. These events will grapple with the conundrums and beauty of revolutionary solidarity. How might it (better) shape our aims, strategies, and tactics given the current grassroots resistance, uprisings, and solidarity projects on Turtle Island and globally?\n\nAs the collection asserts -- and these events will echo -- the lines of oppression are already drawn. The only question is, Which side are you on in the struggle against the violence that is white supremacy and policing? \"Taking Sides\" supplies an ethical compass and militant map of the terrain, arguing not for reform of structurally brutal institutions but rather for their abolition. Its thirteen essays are sharp interventions that take particular aim at the role of nonprofits, “ally” politics, and “peace police” in demobilizing rebellions against hierarchical power. The book offers tools to hone strategies and tactics of resistance, and holds out the promise of robust, tangible solidarity across racial and other lines, because in the battle for systemic transformation, there are no outside agitators.\n\n\"Taking Sides is more than a book; it's a politic aimed at the heart of every radical struggling against a racist state.\" \n—Luis A. Fernandez, author of Policing Dissent\n\n\"Taking Sides compiles essential essays for street fighters, land defenders, and anticolonial accomplices. Its words challenge the current pacifist and NGO-led narratives that seek to manage and disarm people-powered rebellions on Turtle Island, while inspiring readers to go out and fight side by side.\" \n—Franklin López, subMedia.tv\n\nFor more on the book, including its contents, see:\nhttps://www.akpress.org/takingsides.html",
+    "cover": {
+      "offset_x": 0,
+      "offset_y": 28,
+      "source": "https://scontent.xx.fbcdn.net/hphotos-xlp1/v/t1.0-9/12718029_480326362158428_1210777051005508752_n.jpg?oh=cc9841564a028fb8251543f75609de10&oe=57859EA0",
+      "id": "480326362158428"
+    }
+  }
+]

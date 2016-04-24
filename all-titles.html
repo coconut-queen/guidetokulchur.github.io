@@ -7,13 +7,13 @@ section: all
 <h2>All Titles</h2>
 <h3>Released Titles</h3>
 <div class="row">
-<div class="list-group">
-    {% for item in site.categories.title limit:400 order:title %}
+<div class="list-group isotope-list">
+    {% for item in site.titles limit:400 order:date %}
       {% if item.releasedate <= curr_date %}
       <a href="{{site.baseurl}}{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
         <div>
         {% if item.cover %}
-        <img style="width:100%" src="{{site.baseurl}}/{{site.prose.media}}/{{item.cover}}">
+        <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
         {% else %}
         <img src="{{site.defaultphoto}}" style="width:100%" />
         {% endif %}
@@ -34,12 +34,12 @@ section: all
 <h3>Coming Soon</h3>
 <div class="row">
 <div class="list-group">
-    {% for item in site.categories.title limit:400 order:title %}
+    {% for item in site.titles limit:400 order:title %}
     {% if item.releasedate >= curr_date %}
       <a href="{{site.baseurl}}{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
         <div>
           {% if item.cover %}
-          <img style="width:100%" src="{{site.baseurl}}/{{site.prose.media}}/{{item.cover}}">
+          <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
           {% else %}
           <img src="{{site.defaultphoto}}" style="width:100%" />
           {% endif %}
