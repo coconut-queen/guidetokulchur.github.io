@@ -31,7 +31,7 @@
               <li><a href="all-titles">All Titles</a></li>
               {% for item in site.serieses %}
               <li {% if item.url == page.url %} class="active"{% endif %}>
-                <a href="/{{ item.url }}">{{ item.title }}</a>
+                <a href="{{ item.url }}">{{ item.title }}</a>
               </li>
               {% endfor %}
           </ul>
