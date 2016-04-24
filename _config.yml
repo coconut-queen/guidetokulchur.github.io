@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: 'guidetokulchur.github.io'
 permalink: pretty
 markdown: rdiscount
 port: 3200
@@ -14,6 +14,16 @@ paypal:
   email: clevelandtapes@yahoo.com
 defaultphoto: "https://placeholdit.imgix.net/~text?txtsize=42&txt=Image+Coming+Soon&w=600&h=400"
 defaultcover: "main-cover.jpg"
+navigation:
+    - name: About
+      subpages:
+        - name: coo
+    - name: Print Shop
+      subpages:
+        - name: Get A qu
+    - name: Events
+      url:
+
 collections:
   titles:
     output: true
