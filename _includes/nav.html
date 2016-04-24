@@ -20,8 +20,8 @@
                 </fieldset>
             </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="events">Events</a></li>
-        <li><a href="blog">Blog</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Press <span class="caret"></span>
@@ -31,7 +31,7 @@
               <li><a href="all-titles">All Titles</a></li>
               {% for item in site.serieses %}
               <li {% if item.url == page.url %} class="active"{% endif %}>
-                <a href="{{ item.url }}">{{ item.title }}</a>
+                <a href="/{{ item.url }}">{{ item.title }}</a>
               </li>
               {% endfor %}
           </ul>
