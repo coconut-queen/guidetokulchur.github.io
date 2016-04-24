@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{site.baseurl}}/">GTK Press</a>
+      <a class="navbar-brand" href="">GTK Press</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -20,15 +20,15 @@
                 </fieldset>
             </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{site.baseurl}}/events">Events</a></li>
-        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
+        <li><a href="events">Events</a></li>
+        <li><a href="blog">Blog</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Press <span class="caret"></span>
           </a>
           {% if site.serieses %}
           <ul class="dropdown-menu " >
-              <li><a href="{{site.baseurl}}/all-titles">All Titles</a></li>
+              <li><a href="all-titles">All Titles</a></li>
               {% for item in site.serieses %}
               <li {% if item.url == page.url %} class="active"{% endif %}>
                 <a href="{{ item.url }}">{{ item.title }}</a>

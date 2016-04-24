@@ -20,10 +20,10 @@ section: titles
         {% endif %}
             {% if page.cover %}
             <a href="#{{page.cover}}">
-              <img class="thumbnail" src='{{site.baseurl}}/{{site.mediapath}}/{{page.cover}}' style="width:100%;" />
+              <img class="thumbnail" src='{{site.mediapath}}/{{page.cover}}' style="width:100%;" />
             </a>
             <a href="#_" class="lightbox" id="{{page.cover}}">
-              <img src="{{site.baseurl}}/{{site.mediapath}}/{{page.cover}}">
+              <img src="{{site.mediapath}}/{{page.cover}}">
             </a>
             {% else %}
             <img src="{{site.defaultphoto}}" class="thumbnail" style="width:100%; margin-top:3em" />

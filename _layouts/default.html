@@ -9,7 +9,7 @@
   <!-- Regardless of what category it is -->
     <meta property='og:title' content='{{page.title}}'/>
     <meta property="og:description" content="{{page.description}}"/>
-    <meta property="og:image" content="{{site.baseurl}}/{{site.mediapath}}/{{page.cover}}"/>
+    <meta property="og:image" content="{{site.mediapath}}/{{page.cover}}"/>
 
     {% if page.category == 'title' %}
     <meta property="og:type" content="books.book"/>
@@ -19,14 +19,14 @@
     {% endif %}
 
   {% else %}
-    <meta property='og:image' content='{{site.baseurl}}/{{prose.media}}/{{site.defaultcover}}'/>
+    <meta property='og:image' content='{{prose.media}}/{{site.defaultcover}}'/>
 
   {% endif %}
-  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
+  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   <link rel="stylesheet" id="font-oswald-css" href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" media="all">
-  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <link href='site.css' rel='stylesheet' />
 </head>
 <body class="{% if page.url != '/index.html' %}type-{{page.category}} {{page.permalink}}{% else %}home{% endif %} section-{{page.section}}" >
   {% include nav.html %}
@@ -37,7 +37,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
 
-  <script src='{{site.baseurl}}/site.js'></script>
+  <script src='site.js'></script>
   <script src="{{site.basurl}}/titles.js"></script>
   
   <script>

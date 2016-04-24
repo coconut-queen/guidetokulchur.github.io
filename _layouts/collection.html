@@ -16,7 +16,7 @@ layout: default
       {% assign upcoming_titles = true %}
   {% endif %}
 {% endfor %}
-<div class="banner-image" style="background-image:url('{{site.baseurl}}/{{site.mediapath}}/{{page.cover}}')">
+<div class="banner-image" style="background-image:url('{{site.mediapath}}/{{page.cover}}')">
 </div>
 <div class="banner-overlay-wrapper">
   <div class="banner-image-overlay">
@@ -44,7 +44,7 @@ layout: default
         {% if page.submissionslink %}
         <div class="panel panel-default">
           <div class="panel-body">
-            <a href="{{site.baseurl}}/{{page.submissionslink}}" class="btn btn-primary">Submit to the {{page.title}}</a>
+            <a href="{{page.submissionslink}}" class="btn btn-primary">Submit to the {{page.title}}</a>
           </div>
         </div>
         {% endif %}
@@ -59,7 +59,7 @@ layout: default
                   <div class="row">
                       <div class="col-md-4">
                       {% if item.cover %}
-                      <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
+                      <img style="width:100%" src="{{site.mediapath}}/{{item.cover}}">
                       {% else %}
                       <img src="{{site.defaultphoto}}"style="width:100%;" />
                       {% endif %}
@@ -83,7 +83,7 @@ layout: default
                       <div class="row">
                           <div class="col-md-4">
                           {% if item.cover %}
-                          <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
+                          <img style="width:100%" src="{{site.mediapath}}/{{item.cover}}">
                           {% else %}
                           <img src="{{site.defaultphoto}}"style="width:100%;" />
                           {% endif %}

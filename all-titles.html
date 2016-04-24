@@ -13,7 +13,7 @@ section: all
       <a href="{{site.baseurl}}{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
         <div>
         {% if item.cover %}
-        <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
+        <img style="width:100%" src="{{site.mediapath}}/{{item.cover}}">
         {% else %}
         <img src="{{site.defaultphoto}}" style="width:100%" />
         {% endif %}
@@ -22,7 +22,7 @@ section: all
             <p class="list-group-item-text">{{item.description}}</p>
       <!--       {% for collection in site.categories.collection %}
                   {% if collection.permalink == item.collection %}
-                 <a href="{{site.baseurl}}/{{collection.url}}"><em>{{collection.title}}</em></a>
+                 <a href="{{collection.url}}"><em>{{collection.title}}</em></a>
                   {% endif %}
             {% endfor %} -->
         </div>
@@ -39,7 +39,7 @@ section: all
       <a href="{{site.baseurl}}{{item.url}}" class="list-group-item col-lg-4 col-sm-6">
         <div>
           {% if item.cover %}
-          <img style="width:100%" src="{{site.baseurl}}/{{site.mediapath}}/{{item.cover}}">
+          <img style="width:100%" src="{{site.mediapath}}/{{item.cover}}">
           {% else %}
           <img src="{{site.defaultphoto}}" style="width:100%" />
           {% endif %}
@@ -48,7 +48,7 @@ section: all
               <p class="list-group-item-text">{{item.description}}</p>
         <!--       {% for collection in site.categories.collection %}
                     {% if collection.permalink == item.collection %}
-                   <a href="{{site.baseurl}}/{{collection.url}}"><em>{{collection.title}}</em></a>
+                   <a href="{{collection.url}}"><em>{{collection.title}}</em></a>
                     {% endif %}
               {% endfor %} -->
         </div>
